@@ -1,0 +1,25 @@
+.opening-hours {
+    width: 300px;
+
+    background-color: #4284df;
+    border-radius: 5px;
+    color: #fff;
+li{
+    list-style: none !important;
+}
+    li span {
+        float: right;
+    }
+
+    li:not(:first-child) {
+        border-top: 1px solid;
+    }
+    
+}
+
+
+.opening-hours li::after {
+    display: block;
+    content: "";
+    clear: both;
+}
