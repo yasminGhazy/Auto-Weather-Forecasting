@@ -4,24 +4,22 @@ export default class sidebar extends React.Component {
 
     render() {
         return (
-            <side>
-            <ul>
-            <li>
-            <i className="fa fa-fw fa-twitter" />
-            </li>
-            <li>
-            <i className="fa fa-fw fa-facebook" />
-            </li>
-            <li>
-            <i className="fa fa-fw fa-instagram" />
-            </li>
-            <li>
-            <i className="fa fa-fw fa-linkedin" />
-            </li>
-           
-          </ul>
-          
-            </side>
+            <aside>
+                <ul>
+                    <li>
+                        <i className="fa fa-fw fa-twitter" />
+                    </li>
+                    <li>
+                        <i className="fa fa-fw fa-facebook" />
+                    </li>
+                    <li>
+                        <i className="fa fa-fw fa-instagram" />
+                    </li>
+                    <li>
+                        <i className="fa fa-fw fa-linkedin" />
+                    </li>
+                </ul>
+            </aside>
         );
     };
 }
