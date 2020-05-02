@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
-import Weather from './components/weather.js';
+import Main from './components/main/weather.js';
+import Header from './components/header/header.js';
+import Sidebar from './components/sidebar/sidebar.js';
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Header />
+      <Sidebar />
+      <Main />
+
     </div>
   );
 }

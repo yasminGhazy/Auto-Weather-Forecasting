@@ -1,0 +1,95 @@
+.img-logo-footer {
+    width: 48px;
+    height: 48px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    height: 2px;
+    width: 25px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -8px;
+}
+
+#nav-toggle span:after {
+    bottom: -8px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all .2s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+/**/
+
+.navbar-expand-lg .navbar-collapse {
+    flex-grow: 0 !important;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    outline-style: none;
+}
+
+.navbar-expand-lg button {
+    border: none !important;
+}
+
+.navbar .container-fluid {
+    margin: 0px 80px auto !important;
+    z-index: 5;
+
+}
+
+
+.navbar-expand-lg li:not(.navbar-brand) {
+    padding: 0px 20px;
+
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(#000 -10%, #ae29ae9e 75%);
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.3;
+}

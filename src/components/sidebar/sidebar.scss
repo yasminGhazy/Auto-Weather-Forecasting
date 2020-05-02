@@ -1,0 +1,27 @@
+side {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+
+    i {
+        text-align: center;
+        color: #fff;
+        display: block;
+        z-index: 3;
+    }
+
+    li {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: black;
+
+        border: 2px solid #000;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+}
