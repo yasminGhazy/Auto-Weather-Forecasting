@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "./weather.scss";
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 export default class weather extends Component {
     state = {
         humidity: "",
@@ -24,7 +21,6 @@ export default class weather extends Component {
                 return axios({
                     url: `http://api.openweathermap.org/data/2.5/weather?q=${response.data.city},{{country}}&APPID=21432e29f051cbc261002482df0c6dfd`,
                     method: 'get',
-                    // redirect: 'follow'
                 })
                     .then(response => {
                         console.log(response);
@@ -36,7 +32,6 @@ export default class weather extends Component {
                             temp: data.main.temp,
                             temp_max: data.main.temp_max,
                             temp_min: data.main.temp_min,
-                           
                             weatherDisc: data.weather[0].description
                         })
                     })
@@ -56,8 +51,8 @@ export default class weather extends Component {
                                 <div className="circle-medium"></div>
                             </div></div>
                         </div>
-                        <div className="col-5" >
-                            <div className="">
+                        <div className="col-5">
+                            <div>
                                 <h1 className="city">
                                     {this.state.city}</h1>
                                 <p className="disc">{this.state.weatherDisc}
@@ -66,13 +61,11 @@ export default class weather extends Component {
                             </div>
                         </div>
                         <div className="col-6">
-
                             <ul id="weather-detail">
                                 <li>Max Temperature: {Math.trunc(this.state.temp_max-273)}°C </li>
                                 <li>Min Temperature: {Math.trunc(this.state.temp_min-273)}°C </li>
                                 <li>Humidity: {this.state.humidity} % </li>
                                 <li>Pressure: {this.state.pressure} mb</li>
-
                             </ul>
                         </div>
                     </div>
