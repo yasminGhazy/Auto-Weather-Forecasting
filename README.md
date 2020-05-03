@@ -11,4 +11,4 @@
 > ## Main ##
 >> - Detect user'city using API (https://ipapi.co/json/) and display it's weather temperature , weather description and some more details weather.
 > ## Note ##
->> - To run try to install npm .
+>> - To run try to install npm and disable adblock.
